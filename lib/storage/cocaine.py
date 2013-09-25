@@ -1,5 +1,5 @@
+import cache
 from . import Storage
-from .. import cache
 
 from cocaine.services import Service
 
