@@ -4,7 +4,7 @@ from .. import cache
 from cocaine.services import Service
 
 
-class LocalStorage(Storage):
+class CocaineStorage(Storage):
     def __init__(self, config):
         self._config = config
         self._storage = Service('storage')

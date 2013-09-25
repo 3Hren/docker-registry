@@ -115,6 +115,7 @@ def temp_store_handler():
 
 from glance import GlanceStorage
 from local import LocalStorage
+from cocaine import CocaineStorage
 from s3 import S3Storage
 
 
@@ -133,6 +134,8 @@ def load(kind=None):
         store = S3Storage(cfg)
     elif kind == 'local':
         store = LocalStorage(cfg)
+    elif kind == 'cocaine':
+        store = CocaineStorage(cfg)
     elif kind == 'glance':
         store = GlanceStorage(cfg)
     else:
