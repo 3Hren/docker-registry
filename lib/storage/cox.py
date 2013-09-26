@@ -1,7 +1,7 @@
 import cache
 from . import Storage
 
-from cox.services import Service
+from cocaine.services import Service
 
 
 class CocaineStorage(Storage):
