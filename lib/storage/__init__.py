@@ -115,7 +115,7 @@ def temp_store_handler():
 
 from glance import GlanceStorage
 from local import LocalStorage
-from cocaine import CocaineStorage
+from cox import CocaineStorage
 from s3 import S3Storage
 
 
