@@ -15,7 +15,10 @@ class CocaineStorage(Storage):
         collection, separator, key = path.partition('/')
 	print "============get_content", collection, key
 	try:
-            return self._storage.read(collection, key).get(timeout=self.timeout)
+            c = self._storage.read(collection, key)
+	    print(c)
+            r = c.get(timeout=self.timeout)
+	    return r
 	except ServiceError as err:
 	    raise IOError(err)
 
